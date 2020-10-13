@@ -1,11 +1,14 @@
-public class ArrayList<T>{
+public class ArrayList{
 
-    private T obj;
     private Nodes firstNode;
     private Nodes lastNode;
     private int length;
 
-    public ArrayList() {}
+    public ArrayList() {
+        firstNode = new Nodes();
+        lastNode = firstNode;
+        length = 1;
+    }
     public boolean add(T data) {}
 
     public void add(int i, T data) {}
@@ -16,5 +19,7 @@ public class ArrayList<T>{
 
     public T set(int i, T data) {}
 
-    public int size() {}
+    public int size() {
+        return length;
+    }
 }
