@@ -1,4 +1,9 @@
-public class ArrayList{
+public class ArrayList<T>{
+
+    private T obj;
+    private Nodes firstNode;
+    private Nodes lastNode;
+    private int length;
 
     public ArrayList() {}
     public boolean add(T data) {}
