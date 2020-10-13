@@ -1,4 +1,5 @@
 public class ArrayList{
+
     public ArrayList() {}
     public boolean add(T data) {}
 
