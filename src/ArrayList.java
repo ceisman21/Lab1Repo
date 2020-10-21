@@ -57,7 +57,7 @@ public class ArrayList<T>{
     }
     public Object get(int i) {
         //Check whether i is in bounds
-        if (i > length) {
+        if (i > length -1 || i < 0) {
             throw new ArrayIndexOutOfBoundsException("Requested index out of bounds.");
         } else {
             //Loop through using .getChild to get target node
