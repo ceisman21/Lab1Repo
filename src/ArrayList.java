@@ -1,12 +1,16 @@
+
 import java.lang.IndexOutOfBoundsException;
 public class ArrayList<T>{
 
-    private T obj;
     private Nodes firstNode;
     private Nodes lastNode;
     private int length;
 
-    public ArrayList() {}
+    public ArrayList() {
+        firstNode = new Nodes();
+        lastNode = firstNode;
+        length = 1;
+    }
     public boolean add(T data) {}
 
     public void add(int i, T data) {}
@@ -41,5 +45,7 @@ public class ArrayList<T>{
         }
     }
 
-    public int size() {}
+    public int size() {
+        return length;
+    }
 }

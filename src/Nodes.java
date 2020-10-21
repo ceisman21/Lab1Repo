@@ -11,12 +11,12 @@ public class Nodes<T> {
 
     Nodes(){
     }
-    public void Node(T obj, Nodes p, Nodes c){
+    public void Nodes(T obj, Nodes p, Nodes c){
         this.obj = obj;
         this.p = p;
         this.c = c;
     }
-    public void Noder(T obj){
+    public void Nodes(T obj){
         this.obj = obj;
     }
     public T getObj(){
