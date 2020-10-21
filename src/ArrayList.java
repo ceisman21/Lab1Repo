@@ -83,7 +83,7 @@ public class ArrayList<T>{
             //Loop through using .getChild to get target node
             Nodes tempNode = firstNode;
             for (int x = 0; x < i; x++) {
-                tempNode = firstNode.getChild();
+                tempNode = tempNode.getChild();
             }
             return tempNode.getObj();
         }
@@ -97,7 +97,7 @@ public class ArrayList<T>{
             //Loop through using .getChild to get target node
             Nodes tempNode = firstNode;
             for (int x = 0; x < i; x++) {
-                tempNode = firstNode.getChild();
+                tempNode = tempNode.getChild();
             }
             tempNode.setObj(data);
         }
