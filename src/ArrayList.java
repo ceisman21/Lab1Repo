@@ -20,6 +20,7 @@ public class ArrayList<T>{
     public T remove(int i) { //removes a node and sets surrounding nodes as parent and child
         Nodes tempChild = new Nodes();
         Nodes tempParent = new Nodes();
+        Nodes tempReg = new Nodes();
 
         tempReg = firstNode;
             for(int j = 0; j < i; j ++) //access the node to be removed
@@ -34,7 +35,7 @@ public class ArrayList<T>{
         tempParent.setChild(tempChild);
         tempChild.setChild(tempParent);
 
-        return tempReg; //return removed node
+        return tempReg.getObj(); //return removed node
     }
 
     private  counting
