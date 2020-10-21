@@ -55,7 +55,6 @@ public class ArrayList<T>{
             temp.setChild(counting);
         }
     }
-}
     public Object get(int i) {
         //Check whether i is in bounds
         if (i > length) {
