@@ -37,7 +37,7 @@ public class ArrayListTester {
         //Test Remove
         System.out.println();
         System.out.println("Now we will test remove, by removing the last index");
-        a.
+        a.remove(2);
         System.out.println("This should be the length (2): " + a.size());
         System.out.println("This should be the first input you entered: " + a.get(0));
         System.out.println("This should be the input you JUST entered: " + a.get(1));
