@@ -1,4 +1,4 @@
-public class ArrayList{
+public class ArrayList<T>{
 
     private Nodes firstNode;
     private Nodes lastNode;

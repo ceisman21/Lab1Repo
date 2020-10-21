@@ -55,28 +55,3 @@ public class Nodes<T> {
         }
     }
 }
-
-class Main{
-    public static void main(String[] args) {
-        int test_int = 13;
-        int parent_int = 20;
-        int child_int = 10;
-
-        Nodes <Integer> intNode = new Nodes<Integer>();
-        intNode.setObj(test_int);
-        System.out.println(intNode.toString());
-
-        Nodes <Integer> parentNode = new Nodes<Integer>();
-        Nodes <Integer> childNode = new Nodes<Integer>();
-
-        parentNode.setObj(parent_int);
-        childNode.setObj(child_int);
-
-        intNode.setParent(parentNode);
-        intNode.setChild(childNode);
-
-        System.out.println("\nShould be Parent: \n" + intNode.getParent().toString());
-        System.out.println("\nShould be Child: \n" + intNode.getChild().toString());
-
-    }
-}
