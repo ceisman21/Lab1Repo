@@ -21,13 +21,25 @@ public class ArrayList<T>{
             //Loop through using .getChild to get target node
             Nodes tempNode = firstNode;
             for (int x = 0; x < i; x++) {
-                firstNode.getChild();
+                tempNode = firstNode.getChild();
             }
             return tempNode.getObj();
         }
     }
 
-    public T set(int i, T data) {}
+    public void set(int i, T data) {
+        //Check whether i is in bounds
+        if (i > length) {
+            throw new ArrayIndexOutOfBoundsException("Requested index out of bounds.");
+        } else {
+            //Loop through using .getChild to get target node
+            Nodes tempNode = firstNode;
+            for (int x = 0; x < i; x++) {
+                tempNode = firstNode.getChild();
+            }
+            tempNode.setObj(data);
+        }
+    }
 
     public int size() {}
 }
