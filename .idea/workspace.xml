@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054f683d-ec10-446e-988e-91d979e5da04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ArrayListTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <updated>1602608627242</updated>
       <workItem from="1602608628983" duration="16000" />
       <workItem from="1602608697932" duration="2260000" />
-      <workItem from="1603294121136" duration="2153000" />
+      <workItem from="1603294121136" duration="2392000" />
     </task>
     <servers />
   </component>
