@@ -27,12 +27,12 @@ public class ArrayListTester {
 
         //Test add at a point
         System.out.print("Give us an input to go between the two we just defined: ");
-        a.add(1, "Not");
+        a.add(1, s.next());
         System.out.println();
+        System.out.println("This should be the length (3): " + a.size());
         System.out.println("This should be the first input you entered: " + a.get(0));
         System.out.println("This should be the input you JUST entered: " + a.get(1));
         System.out.println("This should be the second input you entered: " + a.get(2));
-        System.out.println("This should be the length (3): " + a.size());
 
         //Test Remove
         System.out.println();
