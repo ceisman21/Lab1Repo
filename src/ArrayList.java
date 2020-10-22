@@ -56,24 +56,33 @@ public class ArrayList<T>{
         }
     }
     public T remove(int i) { //removes a node and sets surrounding nodes as parent and child
-        Nodes tempChild = new Nodes();
-        Nodes tempParent = new Nodes();
-        Nodes tempReg = new Nodes();
+        Nodes tempReg = firstNode;
 
-        tempReg = firstNode;
-        for(int j = 0; j < i; j ++) //access the node to be removed
-        {
-            tempReg = tempReg.getChild();
+        if(i >= length-1){
+            tempReg = lastNode;
+            lastNode = lastNode.getParent();
+            length--;
+            return (T)(tempReg.getObj());
         }
+        if(i <= 0){
+            tempReg = firstNode;
+            firstNode = firstNode.getChild();
+            length--;
+            return (T)(tempReg.getObj());
+        }
+        else {
+            for (int j = 0; j < i; j++) //access the node to be removed
+            {
+                tempReg = tempReg.getChild();
+            }
 
-        tempChild = tempReg.getChild();
-        tempParent = tempReg.getParent();
+            tempReg.getChild().setParent(tempReg.getParent());
+            tempReg.getParent().setChild(tempReg.getChild());
 
-        //connect parent and child
-        tempParent.setChild(tempChild);
-        tempChild.setChild(tempParent);
+            length--;
 
-        return (T)(tempReg.getObj()); //return removed node
+            return (T) (tempReg.getObj()); //return removed node
+        }
     }
     public Object get(int i) {
         //Check whether i is in bounds
