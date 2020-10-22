@@ -1,4 +1,3 @@
-
 import java.lang.IndexOutOfBoundsException;
 public class ArrayList<T>{
 
@@ -32,27 +31,28 @@ public class ArrayList<T>{
         temp.setObj(data);
         Nodes running = firstNode;
         Nodes counting = firstNode;
-        if(i == 0){
+        if(i <= 0){
             firstNode.setParent(temp);
             firstNode = temp;
             length++;
         }
-        if(i == length-1){
+        if(i >= length){
             lastNode.setChild(temp);
             lastNode = temp;
             length++;
         }
         else{
-            for(int j = 0; j < i; j++){
+            for(int j = 1; j < i; j++){
                 running = running.getChild();
             }
-            for(int j = 0; j <= i; j++){
+            for(int j = 1; j < i+1; j++){
                 counting = counting.getChild();
             }
             running.setChild(temp);
             counting.setParent(temp);
             temp.setParent(running);
             temp.setChild(counting);
+            length++;
         }
     }
     public T remove(int i) { //removes a node and sets surrounding nodes as parent and child
